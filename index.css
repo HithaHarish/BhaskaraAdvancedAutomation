@@ -1,0 +1,34 @@
+.header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+/*
+.sec2{
+    display: flex;
+    flex-direction: column;
+    margin:0px 20px 0px 20px;
+}
+.heading{
+    text-align: center;
+    align-items: center;
+}
+.header_box{
+    background-color: rgb(20, 2, 60);
+    border: 5px rgb(84, 81, 92) solid;
+    color:white;
+    border-radius: 8px;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:14px;
+    font-variation-settings:"GRAD" 0;
+    padding:0 20px 0 20px;
+}

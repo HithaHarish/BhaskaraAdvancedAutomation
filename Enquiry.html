@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BAA India</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enquiry.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="dashboard">
+        <div>
+            <img src="">
+        </div>
+        <div class="d_buttons">
+            <a href=index.html><button class="d_button">Home</button></a>
+            <button class="d_button">Profile</button>
+            <button class="d_button">Products</button>
+            <a href=Enquiry.html><button class="d_button">Enquiry</button></a>
+            <button class="d_button">Contact Us</button>
+        </div>
+    </div>
+    <div id="main_container">
+        <h1 class="header">Enquiry Form</h1>
+
+        <div class="row">
+            <div class="subrow">
+                <label id="req" for="requirements">What are you looking for? (Requirements)<b style="color:red;">*</b></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="subrow">
+                <input type="radio" id="home-lifts" name="requirement">
+                <label class="req_b" for="home-lifts">Home Lifts</label>
+                <input type="radio" id="comm-lifts" name="requirement">
+                <label class="req_b" for="comm-lifts">Commercial Lifts</label>
+                <input type="radio" id="ca" name="requirement">
+                <label class="req_b" for="ca">Coding Applications</label>
+                <input type="radio" id="mhs" name="requirement">
+                <label class="req_b" for="mhs">Material Handling Systems</label>
+                <input type="radio" id="other" name="requirement">
+                <label class="req_b" for="other">Other</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="subrow">
+                <label>Kindly enter your requirements here:</label>
+            </div>
+            <div class="subrow">
+                <textarea class="input" style="width:100%; height:80px; resize:vertical;" placeholder="Enter your requirements here"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="subrow">
+                <label for="first-name">First Name:<b style="color:red;">*</b></label>
+                <div class="input"><input type="text" class="input" size=100 id="first-name" required pattern ="[A-Za-z ]+" placeholder="Enter First name"></div>
+            </div>
+            <div class="subrow">
+                <label for="last-name">Last Name:</label>
+                <div class="input"><input type="text" class="input" id="last-name" pattern ="[A-Za-z ]+" placeholder="Enter Last name"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="subrow">
+                <label for="phone-no">Phone No:<b style="color:red;">*</b></label>
+                <div style="display: flex; align-items: center;">
+                    <select id="country-code" class="input" style="width: 60px;height:30px">
+                        <option value="+91">+91</option>
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                        <option value="+61">+61</option>
+                        <option value="+81">+81</option>
+                        <option value="+86">+86</option>
+                        <option value="+49">+49</option>
+                        <option value="+33">+33</option>
+                        <option value="+971">+971</option>
+                        <option value="+65">+65</option>
+                        <!-- Add more country codes as needed -->
+                    </select>
+                    <input type="tel" minlength="10" maxlength="10" class="input" id="phone-no" pattern="[0-9]{10}" required placeholder="Enter Phone No.">
+                </div>
+            </div>
+            
+            <div class="subrow">
+                <label for="email">Email:<b style="color:red;">*</b></label>
+                <div class="input"><input type="email" id="email" class="input" required placeholder="Enter Email"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="subrow">
+                <label for="address-line1">Address Line 1:<b style="color:red;">*</b></label>
+                <input type="text" class="input" id="address-line1" required placeholder="Enter Address Line 1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="subrow">
+                <label for="address-line2">Address Line 2:<b style="color:red;">*</b></label>
+                <input type="text" class="input" id="address-line2" required placeholder="Enter Address Line 2">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="subrow">
+                <label for="city">City:<b style="color:red;">*</b></label>
+                <input type="text" class="input" id="city" required placeholder="Enter City">
+            </div>
+            <div class="subrow">
+                <label for="state">State:<b style="color:red;">*</b></label>
+                <input type="text" class="input" id="state" required placeholder="Enter State">
+            </div>
+            <div class="subrow">
+                <label for="country">Country:<b style="color:red;">*</b></label>
+                <input type="text" class="input" id="country" required placeholder="Enter Country">
+            </div>
+        </div>
+
+        <button class="submit" type="submit">Submit</button>
+
+    </div>
+
+    <footer>
+        <p>© Bhaskara Advanced Automation, Bengaluru All right reserved.</p>
+    </footer>
+
+    <script src="enquiry.js"></script>
+</body>

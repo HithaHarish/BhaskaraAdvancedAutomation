@@ -1,0 +1,61 @@
+body{
+    background-color: white;
+    color:black;
+    margin: 0;  /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh;  /* Ensure body fills the viewport height */
+    overflow-x: hidden; 
+}
+.dashboard{
+    display:flex;
+    flex-direction:row;
+    height:75px;
+    background:#08d9d6;
+    justify-content: space-between;
+    align-items: center;
+}
+.d_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    align-items: center;
+}
+.d_button{
+    height:40px;
+    width:auto;
+    padding:5px 20px 5px 20px;
+    box-shadow: 2px 2px 10px #827f7f;
+    color: #eaeaea;
+    background-color: #252A34;
+    border:none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    margin:5px 25px 5px 25px;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 20px;
+}
+.d_button:hover{
+
+    cursor: pointer;
+}
+
+.d_button:active{
+    background-color:#FF2E63;
+}
+
+footer p{
+    color:#252A34;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size:22px;
+    height:50px;
+    width:100%;
+    padding: 30px 0px 0px 30px;
+    background-color: #08d9d6;
+}
