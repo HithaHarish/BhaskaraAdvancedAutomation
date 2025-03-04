@@ -1,47 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BAA India</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAA India - Contact Us</title>
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="visitus.css">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <div class="dashboard">
-        <div>
-            <img src="">
-        </div>
+        <img src="logo.png" alt="BAA India Logo">
         <div class="d_buttons">
-            <a href=index.html><button class="d_button">Home</button></a>
-            <button class="d_button">Profile</button>
-            <button class="d_button">Products</button>
-            <a href=Enquiry.html><button class="d_button">Enquiry</button></a>
-            <button class="d_button">Visit Us</button>
+            <a href="index.html"><button class="d_button">Home</button></a>
+            <a href="profile.html"><button class="d_button">Profile</button></a>
+            <a href="products.html"><button class="d_button">Products</button></a>
+            <a href="Enquiry.html"><button class="d_button">Enquiry</button></a>
+            <a href="visitus.html"><button class="d_button">Visit Us</button></a>
         </div>
     </div>
-    <div class="details">
-        <span class="material-symbols-outlined">call</span>
+    
+    <div class="main-container">
+        <p id="contact-us">Contact Us</p>
+        <h3 id="sub-contact-us">We'd love to hear from you!</h3>
+        <hr>
+        <div class="sub-container">
+            <div class="part1">
+                <form id="contactForm">
+                    <div class="row">
+                        <input type="email" placeholder="Email" class="input-button" id="email">
+                        <input type="number" placeholder="Phone Number" class="input-button" id="phone">
+                    </div>
+                
+                    <div class="row"><input type="text" placeholder="Name" class="input-button" id="name"></div>
+                
+                    <div class="row"><textarea placeholder="Message" class="input-button message-box" id="message"></textarea></div>
+                
+                    <div class="row"><input type="submit" value="Submit via WhatsApp" class="input-button submit-button" id="submitBtn"></div>
+                </form>
+                
+                <div class="whatsaap">
+                    <!-- whatsaap symbol -->
+                    <p>Call Us via</p>
+                    <img src="qrcode.png">
+                    <h3>OR</h3>
+                    <button class="call"> Click Here </button>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <img src="phoneicon.png" alt="Phone Icon" class="picon">
+                    <h3>( +91 ) 98863 30317</h3>
+                    <p>Call or message us on WhatsApp for quick responses.</p>
+                </div>
+
+                <div class="contact-card email-card">
+                    <img src="emailicon.png" alt="Email Icon" class="eicon">
+                    <h3>info@baaindia.com</h3>
+                    <p>Drop us an email, and we’ll get back to you as soon as possible.</p>
+                </div>
+
+                <div class="contact-card location-card">
+                    <img src="locationicon.png" alt="Location Icon" class="licon">
+                    <h3>Office Address</h3>
+                    <p><a style="text-decoration: none;" href="https://maps.app.goo.gl/jNUTrqmZGAdsDBfCA">1, 2nd Stage, Kottigepalya, Bengaluru, Karnataka 560091</a></p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7942438809205!2d77.51114949999999!3d12.985008099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3c35efc68f09%3A0x82744dc5865349af!2s1%2C%202nd%20Stage%2C%20Kottigepalya%2C%20Bengaluru%2C%20Karnataka%20560091!5e0!3m2!1sen!2sin!4v1741104302194!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.339149435986!2d77.55734847770995!3d12.992973399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16773e7dc413%3A0xb6cb9f1ad32aef74!2sBhaskara%20Advance%20Automation!5e0!3m2!1sen!2sin!4v1740195902666!5m2!1sen!2sin" 
-        width="100%" 
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+
+    <!-- Footer -->
     <footer>
-        <p>© Bhaskara Advanced Automation, Bengaluru All right reserved.</p>
+        <p>© Bhaskara Advanced Automation, Bengaluru. All rights reserved.</p>
     </footer>
 
-    <script src="enquiry.js"></script>
+    <!-- External JavaScript -->
+    <script src="visitus.js"></script>
 </body>
+</html>
